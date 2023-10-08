@@ -10,7 +10,7 @@ export default function Home() {
 
   const loadFoodItems = async () => {
     try {
-      const response = await fetch("https://server-omega-indol.vercel.app/", {
+      const response = await fetch("http://localhost:5000/api/auth/foodData", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
